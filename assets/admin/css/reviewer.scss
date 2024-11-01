@@ -1,0 +1,433 @@
+/**************************************************************
+ * 1. Variables
+ * 2. Meta boxes
+ * 3. Tabs/panels
+ * 4. Settings
+ * 5. Extensor
+ * 6. Review posts table
+ * 7. Modals
+ * 8. Collapsibles
+ * 9.
+ *************************************************************/
+
+@import "../../parts/rating";
+@import '../../parts/spinner';
+
+
+/**************************************************************
+ * 1. Variables
+ *************************************************************/
+$tabs_bg: #fafafa;
+$tabs_bg: #f9f9f9;
+$tabs_border: 1px solid #eee;
+
+/**************************************************************
+ * 2. Meta boxes
+ *************************************************************/
+#review_details {
+	overflow: hidden;
+}
+
+/**************************************************************
+ * 3. Tabs/ panel styling
+ *************************************************************/
+#review_details {
+
+	.inside {
+		padding: 0;
+		margin: 0 !important;
+		// 			background: #f1f1f1;
+		display: block;
+		position: relative;
+	}
+	.tabs-panels-wrap > .tabs {
+		width: 22.5%;
+		min-width: 100px;
+		min-height: 200px;
+		float: left;
+		box-sizing: border-box;
+		background: $tabs_bg;
+		border-right: $tabs_border;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			background-color: $tabs_bg;
+			height: 9999vw;
+			width: 100%;
+			border-right: $tabs_border;
+			bottom: -9999vw;
+			float: left;
+			left: 0;
+			display: block;
+		}
+
+		ul {
+			margin: 0;
+
+			li {
+				border-bottom: $tabs_border;
+				margin: 0;
+
+				&.active {
+					background: #fff;
+					margin-right: -1px;
+
+					a {
+						color: #666665;
+					}
+				}
+				&:hover {
+					background: #fff;
+					margin-right: -1px;
+				}
+				a {
+					padding: 10px;
+					display: block;
+					text-decoration: none;
+
+					&:focus,
+					&:active {
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+	.panels {
+		width: 77.5%;
+		// 			margin-left: 15%;
+		float: left;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		background: #fff;
+
+		.repeater-header { font-weight: bold; }
+		.repeater-row {
+			padding: 5px 0;
+
+			&:first-child .delete-repeater-row { display: none; }
+			.delete-repeater-row { cursor: pointer; }
+		}
+		.add-repeat-row { margin-top: 5px; }
+
+		input[type="text"], input[type="password"], select, textarea {
+			max-width: 100%;
+			width: 100%;
+		}
+		img.help_tip {
+			margin: 0;
+		}
+
+	}
+}
+
+/**************************************************************
+ * Panel specific styles
+ *************************************************************/
+
+.reviewer-panels {
+
+	.input-field-wrap {
+		padding: 5px 20px 5px 162px !important;
+		margin: 9px 0;
+
+		&:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+
+		label {
+			float: left;
+			width: 150px;
+			padding: 3px 0;
+			margin: 1px 0 1px -150px;
+			height: 20px;
+			line-height: 20px;
+		}
+		input[type="text"],
+		input[type="number"],
+		textarea {
+			margin: 0;
+			float: left;
+			width: 100%;
+		}
+	}
+}
+
+
+// General
+#review-detail-panel-general {
+
+}
+// Attributes
+#review-detail-panel-attributes {
+
+	.attribute-input,
+	.attribute-actions {
+		display: inline-block;
+		width: 44%;
+	}
+	.attribute-actions {
+		width: 10%;
+		vertical-align: top;
+	}
+	.attribute-row-add .attribute-actions {
+		vertical-align: bottom;
+	}
+	.attribute-row {
+		margin-top: 7px;
+	}
+
+}
+
+// Categories and tags
+#review_details {
+	#review_categorydiv,
+	#tagsdiv-review_tag {
+		margin: -10px -20px;
+		border: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		display: block !important;
+
+		h2,
+		.handlediv,
+		.taxonomy-add-new {
+			display: none;
+		}
+		.inside {
+			padding: 10px 20px;
+		}
+		.category-add,
+		.tag-add {
+			display: block;
+
+			.form-required,
+			.postform {
+				width: 40% !important;
+				width: calc((100% - 160px) / 2) !important;
+				margin-right: 5px;
+			}
+		}
+		.tagsdiv .newtag {
+			width: 180px;
+		}
+	}
+	.categorydiv div.tabs-panel {
+		max-height: 400px;
+	}
+}
+// Hide tags box in the sidebar
+#side-sortables #tagsdiv-review_tag { display: none; }
+
+/**************************************************************
+ * 4. Settings
+ *************************************************************/
+.reviewer-settings.wrap {
+
+	input[type="text"],
+	input[type="number"],
+	select,
+	textarea {
+		min-width: 250px;
+	}
+	.input-image-size-number {
+		min-width: 60px !important;
+		width: 60px !important;
+	}
+	a.nav-tab {
+
+		&:focus {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+
+
+/**************************************************************
+ * 5. Extensor
+ *************************************************************/
+@import "parts/_extensor";
+
+/**************************************************************
+ * 6. Review posts table
+ *************************************************************/
+.post-type-review {
+
+	th.column-thumbnail {
+		width: 60px;
+		text-align: center;
+	}
+	td.column-thumbnail {
+		text-align: center;
+
+		img {
+			max-width: 45px;
+			max-height: 45px;
+			width: auto;
+			height: auto;
+		}
+	}
+
+
+	// Correction for thumbnails on small screens
+	@media screen and ( max-width: 782px ) {
+		th.column-thumbnail {
+			display: none;
+		}
+		td:not(.hidden).column-thumbnail {
+			display: inline-block !important;
+		}
+		.wp-list-table tr:not(.inline-edit-row) td:not(.check-column).column-title {
+			display: inline-block !important;
+			width: calc( 100% - 130px ) !important;
+		}
+	}
+}
+
+/**************************************************************
+ * 7. Modals
+ *************************************************************/
+.modal-container {
+	z-index: 99999;
+	position: relative;
+}
+
+/**************************************************************
+ * 8. Collapsibles
+ *************************************************************/
+.reviewer-collapsible.ui-sortable-helper {
+	opacity: 0.8;
+}
+
+.reviewer-collapsible-placeholder {
+	border: 1px dashed #b4b9be;
+	margin: 0 auto 10px;
+	height: 45px;
+	//width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.reviewer-collapsible {
+	margin: 0 auto 10px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.reviewer-collapsible-top {
+	font-size: 13px;
+	font-weight: 600;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	background: #fafafa;
+	color: #23282d;
+	cursor: move;
+
+	&:hover .reviewer-collapsible-action-remove {
+		opacity:1;
+	}
+
+	.reviewer-collapsible-action {
+		color: #555d66;
+	}
+	a.reviewer-collapsible-action,
+	a.reviewer-collapsible-action:hover {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+		text-decoration: none;
+		float: right;
+	}
+	a.reviewer-collapsible-action:after {
+		margin-top: 10px;
+		margin-right: 10px;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		right: 0;
+		content: "\f140";
+		border: none;
+		background: none;
+		cursor: auto;
+		font: normal 20px/1 dashicons;
+		speak: none;
+		display: block;
+		padding: 0;
+		text-indent: 0;
+		text-align: center;
+		position: relative;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	.reviewer-collapsible-action-remove {
+		line-height: 20px;
+		vertical-align: middle;
+		font-size: 13px;
+		color: #a00;
+		height: 20px;
+		margin: 10px 1em 5px 0;
+		display: inline-block;
+		font-weight: normal;
+		float: right;
+		opacity: 0;
+
+		&:hover {
+			color: #f00;
+			text-decoration: none;
+		}
+	}
+	h3,
+	h4 {
+		margin: 0;
+		padding: 15px;
+		font-size: 1em;
+		line-height: 1;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.in-reviewer-collapsible-title {
+		color: #665;
+	}
+	.reviewer-collapsible-title-action {
+		float: right;
+		position: relative;
+	}
+}
+
+
+
+.reviewer-collapsible.open .reviewer-collapsible-top a.reviewer-collapsible-action:after {
+	content: "\f142";
+}
+
+
+
+.reviewer-collapsibles .reviewer-collapsible-inside {
+	padding: 1px 15px 15px 15px;
+	line-height: 16px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+
+	p {
+		margin: 1em 0;
+	}
+}

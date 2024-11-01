@@ -1,0 +1,21 @@
+.reviewer-notice {
+	//background: #fafafa;
+	background: #f6f6f6;
+	padding: 1em 2em;
+	border-left: 3px solid #3d84a8;
+	margin-bottom: 1.7em;
+	box-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.1 );
+
+	&.success {
+		border-color: #00AD7C;
+	}
+	&.error {
+		border-color: #CB0101;
+	}
+	&.warning {
+		border-color: #F6C90E;
+	}
+	&.info {
+		border-color: #3d84a8;
+	}
+}

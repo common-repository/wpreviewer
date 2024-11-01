@@ -1,0 +1,47 @@
+.review-rating-wrap {
+	position: relative;
+	display: inline-block;
+
+	.star svg {
+		width: 30px;
+		height: 30px;
+	}
+	.review-rating-color {
+		position: absolute;
+		top: 0;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.star:not(.star-colored) svg {
+		fill: #ddd;
+	}
+	.star-colored svg {
+		fill: #FFDF88;
+	}
+}
+
+.review-rating-wrap {
+	float: left;
+	line-height: 1.7;
+	margin-right: 10px;
+
+	.star svg {
+		width: 18px;
+		height: 18px;
+		vertical-align: sub;
+	}
+}
+
+.review-rating-text-wrap {
+	display: inline-block;
+
+	.rating-text-left {
+		float: left;
+		line-height: 1.7;
+		margin-right: 5px;
+	}
+	.rating-text-right {
+		float: right;
+		line-height: 1.7;
+	}
+}

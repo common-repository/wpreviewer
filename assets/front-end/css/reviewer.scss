@@ -1,0 +1,195 @@
+/**************************************************************
+ * 1. Variables
+ * 2. Single review
+ *   2.1 Ratings
+ *
+ * 3. Review archive
+ * 4. Spinner / loading
+ * 5. Widgets
+ *************************************************************/
+
+@import "./parts/notices";
+
+/**************************************************************
+ * 1. Variables
+ *************************************************************/
+$base-color: #333;
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+
+/**************************************************************
+ * 2. Single review
+ *************************************************************/
+
+// 2.1 Attributes
+.review-attributes-wrap {
+	margin: 20px 0;
+}
+.review-attributes {
+	padding: 10px 10px 10px 0;
+
+	.review-attribute {
+		margin-bottom: 7px;
+	}
+	.review-attribute-name {
+		font-weight: bold;
+		min-width: 150px;
+		display: inline-block;
+	}
+	.review-attribute-value {
+
+	}
+}
+
+// 2.2 Ratings
+@import "../../parts/rating";
+
+
+// 2.3 Image
+.review-featured-image {
+	margin-bottom: 1.714285714rem;
+}
+
+// 2.4 Meta
+.single-review .review-meta {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 7px 0;
+	color: #999;
+	font-size: 11px;
+	margin-top: 7px;
+
+	.review-meta-part {
+		white-space: nowrap;
+		display: inline-block;
+	}
+}
+.single-review .review-tags {
+	margin: 20px 0;
+	padding: 7px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+/**************************************************************
+ * 3. Review archive
+ *************************************************************/
+
+.post-type-archive-review,
+.tax-review_category,
+.tax-review_tag,
+.widget_review_list {
+
+	.archive-posts {
+		min-height: 50px;
+	}
+
+	.review-intro {
+		margin: 0 0 0 200px;
+		clear: none;
+	}
+	.review-featured-image {
+		display: inline-block;
+		float: left;
+	}
+	.review-meta {
+		color: #999;
+		font-size: 11px;
+		margin-top: 5px;
+	}
+	.review-meta-part {
+		white-space: nowrap;
+		display: inline-block;
+		line-height: 1.4;
+	}
+	.entry-header {
+		margin-bottom: 15px;
+	}
+	.entry-header .comments-link {
+		margin-top: 0;
+		line-height: 1.4;
+	}
+
+	@import "../../parts/rating";
+}
+
+
+// 3.1 Pagination
+.reviewer-pagination {
+	margin-top: 25px;
+	text-align: center;
+
+	ul {
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-right-width: 0;
+			min-width: 25px;
+			text-align: center;
+			float: left;
+			margin: 0;
+
+			.page-numbers {
+				display: block;
+				text-decoration: none;
+			}
+			a:hover {
+				background: #f5f5f5;
+			}
+			& .current {
+				background: #f1f1f1;
+			}
+			&:last-child{
+				border-right-width: 1px;
+			}
+		}
+		&:after {
+			@extend .clearfix;
+		}
+	}
+}
+
+/**************************************************************
+ * 4. Spinner / loading
+ *************************************************************/
+@import '../../parts/spinner';
+
+/**************************************************************
+ * 5. Widgets
+ *************************************************************/
+
+.widget_review_categories li {
+	list-style: none;
+
+	ul.children {
+		margin-left: 12px;
+	}
+}
+
+.widget_review_list {
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	.review-thumbnail {
+		float: left;
+
+		img {
+			display: block;
+		}
+	}
+	.body {
+		margin-left: 65px;
+	}
+}

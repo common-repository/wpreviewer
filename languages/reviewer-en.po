@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Reviewer\n"
+"POT-Creation-Date: 2016-05-02 17:41+0100\n"
+"PO-Revision-Date: 2016-05-02 17:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_n;_e;_x\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../includes/admin/admin-functions.php:111
+#: ../includes/admin/class-settings.php:54 ../includes/class-installer.php:74
+#: ../includes/post-types/class-review.php:53
+#: ../includes/post-types/class-review.php:60
+msgid "Reviews"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:116
+#: ../includes/admin/admin-functions.php:117
+msgid "Add new Review"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:125
+#: ../includes/admin/admin-functions.php:126
+#: ../includes/taxonomies/class-review-tag.php:44
+msgid "Tags"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:134
+#: ../includes/admin/admin-functions.php:135
+#: ../includes/taxonomies/class-review-category.php:44
+msgid "Categories"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:143
+msgid "Reviewer Settings"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:144
+msgid "Settings"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:153
+#: ../includes/admin/admin-functions.php:154
+msgid "Extensions"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:352
+msgid "Select a page"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:564
+msgid "Crop image?"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:611
+msgid "Thanks for using Reviewer :-)"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:613
+msgid ""
+"Before we can display the reviews on the front-end we need to create a page "
+"to display them on."
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:618
+msgid "Install page"
+msgstr ""
+
+#: ../includes/admin/admin-functions.php:621
+msgid "Dismiss"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:53
+#: ../includes/admin/meta-boxes/class-review-details.php:50
+msgid "General"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:55
+msgid "System"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:115
+msgid "Max rating score"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:116
+msgid "The maximum allowed score to give a review"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:126
+msgid "Rating step"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:127
+msgid "The interval you can set the rating with"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:131
+msgid "Per 0.1"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:132
+msgid "Per 0.5"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:133
+msgid "Per 1"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:155
+msgid "Page to use for review overview"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:156
+msgid "Select the page you'd like to use to display the review archive"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:160
+msgid "Review images"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:161
+#, php-format
+msgid "After setting a new size you may need to %s"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:165
+msgid "Archive image size"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:166
+msgid "The images size for the archive page (in px)"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:175
+msgid "Review image size"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:176
+msgid "The image size for the single review pages (in px)"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:202
+msgid "Wipe data on plugin delete"
+msgstr ""
+
+#: ../includes/admin/class-settings.php:203
+msgid ""
+"All data related to Reviewer will be wiped. It will be like this plugin was "
+"never installed. This <strong>CANNOT</strong> be undone. Make sure to create "
+"a backup before doing this."
+msgstr ""
+
+#: ../includes/admin/class-settings.php:207
+msgid "System info report"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/class-review-details.php:26
+msgid "Review details"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/class-review-details.php:54
+msgid "Attributes"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:3
+msgid ""
+"Attributes can be used to add details to the review like Creator, Genre, "
+"Release date etc."
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:9
+msgid "Name"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:15
+msgid "Value"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:20
+msgid "Add"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:27
+msgid "Setup attributes"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:39
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:60
+msgid "Delete"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-attributes.php:46
+msgid "There are no attributes yet."
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-general.php:5
+#: ../includes/post-types/class-review.php:169
+msgid "Rating"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-general.php:15
+msgid "Enter your rating"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-general.php:17
+msgid "When no rating is given, the rating visualisation will not show up."
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-general.php:26
+msgid "Summary"
+msgstr ""
+
+#: ../includes/admin/meta-boxes/views/review-details-tab-general.php:27
+msgid "The summary is used on the archive page"
+msgstr ""
+
+#: ../includes/admin/views/extensions.php:2
+msgid "Reviewer extensions"
+msgstr ""
+
+#: ../includes/admin/views/extensions.php:3
+msgid ""
+"These are the official Reviewer extensions that are available and/or planned "
+"to be build."
+msgstr ""
+
+#: ../includes/admin/views/extensions.php:53
+msgid ""
+"Couldn't get the extensions, please try again later. If this issue persists, "
+"please get in touch."
+msgstr ""
+
+#: ../includes/admin/views/settings.php:41
+msgid "Save Changes"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:51
+msgid "Review "
+msgstr ""
+
+#: ../includes/post-types/class-review.php:52
+#: ../includes/post-types/class-review.php:54
+msgid "Review"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:55
+msgid "Add New"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:56
+msgid "Add New Review"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:57
+msgid "New Review"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:58
+msgid "Edit Review"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:59
+msgid "View Review"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:61
+msgid "Search Reviews"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:62
+msgid "Parent Reviews:"
+msgstr ""
+
+#: ../includes/post-types/class-review.php:63
+msgid "No Reviews found."
+msgstr ""
+
+#: ../includes/post-types/class-review.php:64
+msgid "No Reviews found in Trash."
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:45
+#: ../includes/taxonomies/class-review-category.php:54
+msgid "Category"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:46
+msgid "Search Categories"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:47
+msgid "All Categories"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:48
+msgid "Parent Category"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:49
+msgid "Parent Category:"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:50
+msgid "Edit Category"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:51
+msgid "Update Category"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:52
+msgid "Add New Category"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-category.php:53
+msgid "New Category Name"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:45
+#: ../includes/taxonomies/class-review-tag.php:54
+msgid "Tag"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:46
+msgid "Search Tags"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:47
+msgid "All Tags"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:48
+msgid "Parent Tag"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:49
+msgid "Parent Tag:"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:50
+msgid "Edit Tag"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:51
+msgid "Update Tag"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:52
+msgid "Add New Tag"
+msgstr ""
+
+#: ../includes/taxonomies/class-review-tag.php:53
+msgid "New Tag Name"
+msgstr ""
+
+#: ../includes/template-functions.php:281 ../templates/loop/summary.php:19
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../reviewer.php:46
+#, php-format
+msgid ""
+"Reviewer requires PHP 5.3 or higher and your current PHP version is %s. "
+"Please (contact your host to) update your PHP version."
+msgstr ""
+
+#: ../templates/loop/meta.php:23 ../templates/loop/meta.php:30
+#: ../templates/single-review/meta.php:25
+#: ../templates/single-review/meta.php:34
+#, php-format
+msgid "Reviewed by %s"
+msgstr ""
+
+#: ../templates/loop/meta.php:29 ../templates/single-review/meta.php:33
+#, php-format
+msgid "Posted on %s"
+msgstr ""
+
+#: ../templates/loop/meta.php:34 ../templates/single-review/meta.php:38
+msgid "Leave a comment"
+msgstr ""
+
+#: ../templates/loop/meta.php:34 ../templates/single-review/meta.php:38
+msgid "1 Comment"
+msgstr ""
+
+#: ../templates/loop/meta.php:34 ../templates/single-review/meta.php:38
+msgid "% Comments"
+msgstr ""
+
+#: ../templates/single-review/attributes.php:22
+msgid "Details"
+msgstr ""
+
+#: ../templates/single-review/meta.php:29
+#, php-format
+msgid "Posted in: %s"
+msgstr ""
+
+#: ../templates/single-review/rating.php:22
+#, php-format
+msgid "%s out of %s"
+msgstr ""
+
+#: ../templates/single-review/tags.php:18
+#, php-format
+msgid "More about %s"
+msgstr ""
